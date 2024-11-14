@@ -1,0 +1,64 @@
+.logo {
+    width: 90px;
+}
+
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.6s ease, transform 1.6s ease;
+    padding: 4rem;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Sticky Navigation CSS */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    /* background-color: white; Adjust as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-right: 4rem;
+    padding-left: 4rem;
+}
+
+.service-card {
+    display: inline-block;
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    background-color: var(--white);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+/* Get Started button hover effect */
+.get-started-btn {
+    padding: 10px 20px;
+    /* background-color: #4CAF50; Base color */
+    /* color: white; */
+    border-radius: 5px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .get-started-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .get-started-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  
+
+  footer {
+    padding:2rem;
+  }
